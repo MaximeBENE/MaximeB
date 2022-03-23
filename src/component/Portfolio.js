@@ -11,7 +11,7 @@ function Portfolio() {
             <div>Disney clone</div>
         </Wrap>
         <Wrap>
-            <img src="images/tesla-logo2.png" />
+            <img src={process.env.PUBLIC_URL +"/images/tesla-logo2.png"} alt='TESLA LOGO' />
             <div>tesla clone</div>
         </Wrap>
         <Wrap>
@@ -19,11 +19,11 @@ function Portfolio() {
             <div>genealogie timestamp</div>
         </Wrap>
         <Wrap>
-            <img src="images/node-logo.png"/>
+            <img src={process.env.PUBLIC_URL +"/images/node-logo.png"} alt='node.js logo' />
             <div>parc d'attraction</div>
         </Wrap>
         <Wrap>
-            <img src="/images/react-logo.png" />
+            <img src={process.env.PUBLIC_URL +"/images/react-logo.png"} alt='react.js logo' />
             <div>chat</div>
         </Wrap>
     </Content>

@@ -4,21 +4,19 @@ import styled from 'styled-components';
 function Footer() {
   return (
 
-    <Container>
+    <Container className='contact' id='contact'>
         <Nav>
-        <Logo src ="/images/maxime-bene-logo.png" />
+        <Logo src ={process.env.PUBLIC_URL +"/images/maxime-bene-logo.png"} />
         <NavMenu>
-        <a>
-            <img src="/images/linkedin-logo.png"/>
+        <a href='https://www.linkedin.com/in/maxime-bene'>
+            <img src={process.env.PUBLIC_URL +"/images/linkedin-logo.png"}/>
             <span>LINKEDIN</span>
         </a>
-        <a>
-            <img src="/images/github-logo.png"/>
+        <a href='https://github.com/MaximeBENE/MaximeB.git' >
+            <img src={process.env.PUBLIC_URL +"/images/github-logo.png"}/>
             <span>GITHUB</span>
         </a>
         </NavMenu>
-        <UserImg  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/860C4A04F49C9678C54EDCE3DBC95CF7E8C93116B69EC81CF88871E1D60A7F5A/scale?width=96&format=png"
-        />
         </Nav>
         <Wrap>
             <Profil>
@@ -31,15 +29,15 @@ function Footer() {
                 <h3>MAXIME BENE</h3>
                 <div>
                     <a>
-                    <img src="/images/phone-logo-16.png"/>
+                    <img src={process.env.PUBLIC_URL +"/images/phone-logo-16.png"}/>
                     <span>06 66 39 37 48</span>
                     </a>
                     <a>
-                    <img src="/images/email-logo-16.png"/>
+                    <img src={process.env.PUBLIC_URL +"/images/email-logo-16.png"}/>
                     <span>bene.max31@gmail.com</span>
                     </a>
                     <a>
-                    <img src="/images/link-logo-16.png"/>
+                    <img src={process.env.PUBLIC_URL +"/images/link-logo-16.png"}/>
                     <span>Maxime-BENE.com</span>
                     </a>
                 </div>
@@ -76,6 +74,8 @@ const Contact = styled.div`
         padding: 0 12px;
         margin-top: 5px;
         cursor: pointer;
+        text-decoration: none;
+        color: inherit;
         
         &:hover {
             color: rgb(241, 208, 10);
@@ -139,6 +139,9 @@ const NavMenu = styled.div`
         align-items: center;
         padding: 0 12px;
         cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        
         
 
         img {
@@ -177,10 +180,4 @@ const NavMenu = styled.div`
             }
         }
     }
-`
-const UserImg = styled.img`
-    width: 48px;
-    height:48px;
-    border-radius: 50%;
-    cursor: pointer;
 `

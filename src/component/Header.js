@@ -8,7 +8,7 @@ function Header() {
       <Logo>
             <video id='video' loop autoPlay muted>
             <source
-                src="/videos/maxime-logo.mp4"
+                src={process.env.PUBLIC_URL +"/videos/maxime-logo.mp4" }
                 type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -16,44 +16,44 @@ function Header() {
         </Logo>
           <NavMenu>
             <a href='#'>
-                <img src="/images/home-icon.png"/>
+                <img src={process.env.PUBLIC_URL +"/images/home-icon.png" }/>
                 <span>ACCUEIL</span>
             </a>
             <a href='#skills'>
-                <img src="/images/network.png"/>
+                <img src={process.env.PUBLIC_URL +"/images/network.png" }/>
                 <span>COMPÉTENCES</span>
             </a>
             <a href='#portfolio'>
-                <img src="/images/book-icon.png"/>
+                <img src={process.env.PUBLIC_URL +"/images/book-icon.png" }/>
                 <span>PORTFOLIO</span>
             </a>
             <a href='#story'>
-                <img src="/images/eye-icon.png"/>
+                <img src={process.env.PUBLIC_URL +"/images/eye-icon.png" }/>
                 <span>À PROPOS</span>
             </a>
             <a href='#contact'>
-                <img src="/images/contact-icon.png"/>
+                <img src={process.env.PUBLIC_URL +"/images/contact-icon.png" }/>
                 <span>CONTACT</span>
             </a>
           </NavMenu>
-          <CustomMenu src="/images/menu-icon.png" onClick={()=>setBurgerStatus(true)}/>
+          <CustomMenu src={process.env.PUBLIC_URL +"/images/menu-icon.png" } onClick={()=>setBurgerStatus(true)}/>
           <BurgerNav show={burgerStatus} >
                 <CloseWrapper>
-                    <CustomClose src="images/close-icon.png" onClick={()=>setBurgerStatus(false)}/>
+                    <CustomClose src={process.env.PUBLIC_URL +"/images/close-icon.png" } onClick={()=>setBurgerStatus(false)}/>
                 </CloseWrapper> 
-                <li className='liTop'><a href="#"><img src="/images/home-icon.png"/>
+                <li className='liTop'><a href="#"><img src={process.env.PUBLIC_URL +"/images/home-icon.png" }/>
                 <span>ACCUEIL</span></a></li>
                 
-                <li><a href="#skills"><img src="/images/network.png"/>
+                <li><a href="#skills"><img src={process.env.PUBLIC_URL +"/images/network.png" }/>
                 <span>COMPÉTENCES</span></a></li>
 
-                <li><a href="#portfolio"><img src="/images/book-icon.png"/>
+                <li><a href="#portfolio"><img src={process.env.PUBLIC_URL +"/images/book-icon.png" }/>
                 <span>PORTFOLIO</span></a></li>
 
-                <li><a href="#story"><img src="/images/eye-icon.png"/>
+                <li><a href="#story"><img src={process.env.PUBLIC_URL +"/images/eye-icon.png" }/>
                 <span>À PROPOS</span></a></li>
 
-                <li><a href="#contact"><img src="/images/contact-icon.png"/>
+                <li><a href="#contact"><img src={process.env.PUBLIC_URL +"/images/contact-icon.png" }/>
                 <span>CONTACT</span></a></li>
             </BurgerNav>
       </Nav>

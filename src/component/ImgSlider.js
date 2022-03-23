@@ -17,16 +17,16 @@ function ImgSlider() {
   return (
     <Carousel {...settings}>
         <Wrap>
-            <img src="/images/disney-1.png" />
+            <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
         </Wrap>
         <Wrap>
-            <img src="/images/tesla-1.png" />
+            <img src={process.env.PUBLIC_URL +"/images/tesla-1.png"} />
         </Wrap>
         <Wrap>
-            <img src="/images/disney-1.png" />
+            <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
         </Wrap>
         <Wrap>
-            <img src="/images/tesla-1.png" />
+            <img src={process.env.PUBLIC_URL +"/images/tesla-1.png"} />
         </Wrap>
     </Carousel>
   );

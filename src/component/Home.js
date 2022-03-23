@@ -13,7 +13,7 @@ function Home() {
     <Container >
     <video id='video1' className='video1' loop autoPlay muted>
       <source
-        src="/videos/wave-background.mp4"
+        src={process.env.PUBLIC_URL +"/videos/wave-background.mp4" }
         type="video/mp4"
       />
       Your browser does not support the video tag.

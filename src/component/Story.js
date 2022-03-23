@@ -7,7 +7,7 @@ function Story() {
       <Video>
       <video id='video' loop autoPlay muted>
         <source
-          src="/videos/maxime-logo.mp4"
+          src={process.env.PUBLIC_URL +"/videos/maxime-logo.mp4" }
           type="video/mp4"
         />
         Your browser does not support the video tag.

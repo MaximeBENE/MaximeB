@@ -45,7 +45,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/MaximeB' element={<Home/>} />
         </Routes>
         <Footer />
       </Router>
