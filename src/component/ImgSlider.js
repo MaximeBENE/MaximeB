@@ -5,25 +5,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function ImgSlider() {
-    let settings = {
+    const settings = {
         dots: true,
-        fade: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-    }
+        slidesToScroll: 1
+    };
   return (
     <Carousel {...settings}>
         <Wrap>
-            <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
+            <a href="https://maximebene.github.io/disney-plus-clone/">
+                <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
+            </a>
         </Wrap>
         <Wrap>
             <img src={process.env.PUBLIC_URL +"/images/tesla-1.png"} />
         </Wrap>
         <Wrap>
-            <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
+            <a href="https://maximebene.github.io/disney-plus-clone/">
+                <img src={process.env.PUBLIC_URL +"/images/disney-1.png"} />
+            </a>
         </Wrap>
         <Wrap>
             <img src={process.env.PUBLIC_URL +"/images/tesla-1.png"} />

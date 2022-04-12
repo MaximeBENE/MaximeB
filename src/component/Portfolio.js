@@ -6,9 +6,11 @@ function Portfolio() {
     <Container className='portfolio' id='portfolio'>
     <h1>MON PORTFOLIO</h1>
     <Content>
-        <Wrap>
-            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=400&aspectRatio=1.78&format=png" />
-            <div>Disney clone</div>
+        <Wrap>  
+            <a href="https://maximebene.github.io/disney-plus-clone/">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=400&aspectRatio=1.78&format=png" />
+                <div>Disney clone</div>
+            </a>
         </Wrap>
         <Wrap>
             <img src={process.env.PUBLIC_URL +"/images/tesla-logo2.png"} alt='TESLA LOGO' />
@@ -82,10 +84,11 @@ const Wrap = styled.div`
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-    div {
+    div,a {
       font-size: 20px;
       letter-spacing: 1.42px;
-      
+      text-decoration: none;  
+      color: inherit;    
     }
 
     img {
@@ -112,7 +115,7 @@ const Wrap = styled.div`
             opacity:75%;
         }
         
-        div{
+        div,a{
             background-color:rgba(23, 26, 32, 0.8);
 
         }
